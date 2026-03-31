@@ -1,4 +1,3 @@
-import { useForm } from "react-hook-form";
 import { Link } from "react-router";
 import Button from "~/components/daisyUi/button";
 import HLogo from "~/components/h-logo";
@@ -19,7 +18,7 @@ export default function Index() {
         </div>
         <div className="md:w-125 bg-white p-8 border border-[#E2E8F0] rounded-2xl mt-8">
           <Link
-            to="/auth/sign-in"
+            to="/app/auth/sign-in"
             className="w-full btn bg-main text-white px-10 py-2 h-full rounded-[10px] text-sm font-medium block text-center"
             type="submit"
           >
@@ -30,7 +29,7 @@ export default function Index() {
         <p className="text-center text-sm font-normal text-muted mt-8">
           Don't have an account?
           <Link
-            to="/auth/sign-up"
+            to="/app/auth/sign-up"
             className="text-dark text-base font-medium hover:underline ms-1"
           >
             Create account

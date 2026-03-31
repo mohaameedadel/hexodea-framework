@@ -1,10 +1,11 @@
 import { useForm } from "react-hook-form";
+import { LuArrowLeft } from "react-icons/lu";
 import { Link } from "react-router";
 import Button from "~/components/daisyUi/button";
 import TextInput from "~/components/form/text-input";
 import HLogo from "~/components/h-logo";
 
-export default function SignIn() {
+export default function ForgetPassword() {
   const {
     control,
     handleSubmit,
@@ -18,10 +19,10 @@ export default function SignIn() {
           <HLogo />
 
           <p className="mt-6 mb-2 text-2xl font-medium text-dark">
-            Sign in to Hexodea
+            Forgot password?
           </p>
           <p className="text-muted font-normal">
-            Enter your credentials to access your account
+            No worries, we'll send you reset instructions
           </p>
         </div>
         <form
@@ -37,38 +38,18 @@ export default function SignIn() {
             rules={{ required: "Email is required" }}
             error={errors.email?.message as string}
           />
-          <div className="relative">
-            <TextInput
-              id="password"
-              name="password"
-              label="Password"
-              control={control}
-              type="password"
-              placeholder="Enter your password"
-              rules={{ required: "Password is required" }}
-              error={errors.password?.message as string}
-            />
-            <Link
-              to="/auth/forgot-password"
-              className="absolute top-1 right-0 text-sm text-main font-medium hover:underline"
-            >
-              Forgot password?
-            </Link>
-          </div>
+
           <Button className="w-full mt-6" type="submit">
-            Sign In
+            Reset Password
           </Button>
         </form>
 
-        <p className="text-center text-sm font-normal text-muted mt-8">
-          Don't have an account?
-          <Link
-            to="/auth/sign-up"
-            className="text-dark text-base font-medium hover:underline ms-1"
-          >
-            Create account
-          </Link>
-        </p>
+        <Link
+          to="/app/auth/sign-in"
+          className="flex items-center justify-center gap-2 text-sm font-medium text-muted mt-8 hover:underline"
+        >
+          <LuArrowLeft className="text-lg" /> Back to login
+        </Link>
       </div>
     </div>
   );

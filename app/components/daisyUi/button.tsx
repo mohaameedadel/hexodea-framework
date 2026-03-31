@@ -38,9 +38,9 @@ export default function Button({
       className={cn(
         className,
         variant === "main" &&
-          "btn bg-main text-white px-10 py-2 h-full rounded-[10px] text-sm font-medium block text-center",
+          "btn bg-main text-white px-10 py-2 rounded-[10px] text-sm font-medium block text-center",
         variant === "default" &&
-          "btn bg-[#FAFAFA] text-dark px-10 py-2 h-full rounded-[10px] border border-[#FAFAFA] text-sm font-medium block text-center",
+          "btn bg-[#FAFAFA] text-dark px-10 py-2 rounded-[10px] border border-[#FAFAFA] text-sm font-medium block text-center",
       )}
     >
       {_renderContent()}

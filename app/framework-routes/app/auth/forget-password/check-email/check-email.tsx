@@ -22,7 +22,7 @@ export default function CheckEmail() {
             Didn't receive the email? Check your spam folder or try again.
           </p>
           <Link
-            to="/auth/forgot-password"
+            to="/app/auth/forgot-password"
             className="w-full mt-6 btn bg-[#FAFAFA] text-dark px-10 py-2 h-full rounded-[10px] border border-[#FAFAFA] text-sm font-medium block text-center"
           >
             Try another email
@@ -30,7 +30,7 @@ export default function CheckEmail() {
         </div>
 
         <Link
-          to="/auth/sign-in"
+          to="/app/auth/sign-in"
           className="flex items-center justify-center gap-2 text-sm font-medium text-muted mt-8 hover:underline"
         >
           <LuArrowLeft className="text-lg" /> Back to login

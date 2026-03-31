@@ -15,5 +15,5 @@
 
 html,
 body {
-  @apply bg-[#FAFAFA];
+  @apply bg-[#FAFAFA] text-dark;
 }

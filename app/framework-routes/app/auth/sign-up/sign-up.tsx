@@ -75,7 +75,7 @@ export default function SignUp() {
         <p className="text-center text-sm font-normal text-muted mt-8">
           Already have an account?
           <Link
-            to="/auth/sign-in"
+            to="/app/auth/sign-in"
             className="text-dark text-base font-medium hover:underline ms-1"
           >
             Sign in
