@@ -1,4 +1,4 @@
-import { Outlet } from "react-router";
+import { Link, Outlet } from "react-router";
 import Navbar from "~/components/navbar";
 
 export default function AppDashboardLayout() {
@@ -10,6 +10,13 @@ export default function AppDashboardLayout() {
             H
           </p>
         </div>
+
+        <Link to="/app/applications" className="flex items-center gap-2 mt-6">
+          <p className="text-muted font-normal text-sm">Applications</p>
+        </Link>
+        <Link to="/app/test" className="flex items-center gap-2 mt-6">
+          <p className="text-muted font-normal text-sm">Test</p>
+        </Link>
       </div>
       <div className="w-full">
         <Navbar />
