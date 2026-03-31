@@ -24,6 +24,13 @@ export default function Index() {
           >
             Sign In
           </Link>
+          <Link
+            to="/app/applications"
+            className="w-full btn bg-[#FAFAFA] text-dark px-10 py-2 rounded-[10px] border border-[#FAFAFA] text-sm font-medium block text-center mt-4"
+            type="submit"
+          >
+            Dashboard
+          </Link>
         </div>
 
         <p className="text-center text-sm font-normal text-muted mt-8">
